@@ -29,3 +29,27 @@ Xóa file và giữ nguyên cấu trúc thư mục.
    - Tên thư mục in **hoa**, hiển thị trước.  
    - Tên tệp in **thường**, hiển thị sau.  
 - **DELETE file/folder:** Xóa tệp hoặc thư mục trong thư mục hiện hành.  
+
+---
+
+## Phần 2: IO
+
+---
+
+### **Bài 4: File Spliter and Joiner**
+
+#### a. Chia File (`split`)
+- **Phương thức:** `void split(String source, int pSize)`
+- **Chức năng:** Chia một file nguồn (`source`) thành nhiều file thành phần có kích thước cụ thể (`pSize`).
+
+#### b. Ghép File (`join`)
+- **Phương thức:** `void join(String partFilename)`
+- **Chức năng:** Ghép nối tất cả các file thành phần trong thư mục chứa `partFilename` để khôi phục file ban đầu.
+- **Nguyên tắc:** Chỉ cần cung cấp tên của một file thành phần bất kỳ.
+
+#### c. Quy ước Tên File Thành Phần
+- Các file thành phần sẽ có phần mở rộng chứa 3 ký tự, lần lượt từ: `.001`, `.002`, ..., `.999`.
+
+#### d. Nguyên Tắc Tạo Tên File Thành Phần
+- `partFilename = source + ".001"`, `".002"`, ...
+
