@@ -104,3 +104,6 @@ Toán_hạng_1 Toán_tử Toán_hạng_2
 - Xử lý trường hợp lệnh không hợp lệ
 - Thông tin sinh viên bao gồm: Mã sinh viên, Họ và tên, điểm trung bình. 
 - Sinh viên tự tạo dữ liệu mẫu và lưu trong ArrayList để sử dụng
+  
+### **Bài 19: Tra cứu thông tin sinh viên thông qua RMI**
+- Tương tự bài 18 nhưng dùng RMI, không cần cơ chế POP3
