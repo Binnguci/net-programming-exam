@@ -82,6 +82,25 @@ Toán_hạng_1 Toán_tử Toán_hạng_2
 ``` bash
   1 + 2 rồi nhấp enter, client gửi dòng dữ liệu tới server, server trả về kết quả có dạng:
   1 + 2 = 3
-- ```
+```
 
 - Cần xử lý các ngoại lệ: toán hạng không phải là số và phép chia cho 0.
+
+### **Bài 18:Viết CT client/server ra cứu thông tin sinh viên qua mạng**
+- Kết nối TCP, cổng 54321
+- Tương tác Client/Server thông qua các dòng văn bản
+- Mô hình Command/Response
+- Trước tiên cần phải đăng nhập. Trong giai đoạn này người dùng có thể dùng 3 lệnh sau.
+- **QUIT**: Kết thúc chương trình
+- **USER** user_name
+- **PASS** password
+    Cơ chế đăng nhập tương tự giao thức POP3
+- Sau khi đăng nhập thành công, người dùng có thể tra cứu thông tin sinh viên thông qua các lệnh sau:
+- QUIT: Kết thúc chương trình
+- **FindById** mã_sinh_viên
+- **FindByName** một_phần_cuối_của_tên
+	Ví dụ: Sinh viên có tên là Nguyễn Thị Hoa Hồng thì tham số của FindByName có thể là: Hồng, Hoa Hồng, Thị Hoa Hồng hoặc Nguyễn Thị Hoa Hồng 
+- Kết quả trả về nếu không tìm thấy thì thông báo “Không tìm thấy” ngược lại thì thông tin mỗi sinh viên là 1 dòng 
+- Xử lý trường hợp lệnh không hợp lệ
+- Thông tin sinh viên bao gồm: Mã sinh viên, Họ và tên, điểm trung bình. 
+- Sinh viên tự tạo dữ liệu mẫu và lưu trong ArrayList để sử dụng
